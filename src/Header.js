@@ -52,7 +52,7 @@ const Logo = styled.a`
 
 const Navigation = styled.nav`
   & > a {
-    margin-left: 1em;
+    margin-left: 2em;
     font-weight: 500;
     text-decoration: none;
     color: #000;
