@@ -1,6 +1,6 @@
 {
   "name": "raketa-styleguide",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Helpers for generating and displaying styleguides and design systems. ",
   "main": "dist/bundle.js",
   "scripts": {
