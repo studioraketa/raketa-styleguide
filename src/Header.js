@@ -86,7 +86,7 @@ class Header extends React.Component {
       <HeaderWrapper className={isOpen ? 'show-nav' : ''}>
         <div className="container">
           <Logo href="/">
-            <img src="/static/assets/kyooem-logo-black.svg" alt="" />
+            <img src="/static/assets/logo-black.svg" alt="" />
             <small>Design system by Studio Raketa</small>
           </Logo>
 
