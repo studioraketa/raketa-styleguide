@@ -3,9 +3,9 @@ import React from 'react';
 import Header from './Header';
 import Footer from './Footer';
 
-export default ({children}) => (
+export default ({ slogan, children }) => (
   <div>
-    <Header />
+    <Header slogan={slogan} />
 
     {children}
 

@@ -80,6 +80,7 @@ class Header extends React.Component {
   }
 
   render() {
+    const { slogan } = this.props;
     const { isOpen } = this.state;
 
     return (
@@ -87,7 +88,9 @@ class Header extends React.Component {
         <div className="container">
           <Logo href="/">
             <img src="/static/assets/logo-black.svg" alt="" />
-            <small>Design system by Studio Raketa</small>
+            {slogan &&
+              <small>{slogan}</small>
+            }
           </Logo>
 
           <Navigation>
@@ -96,6 +99,7 @@ class Header extends React.Component {
             <a href="/grid">Grid</a>
             <a href="/forms">Forms</a>
             <a href="/components">Components</a>
+            <a href="/playground">Playground</a>
             <a href="/pages">Pages</a>
           </Navigation>
         </div>
@@ -103,5 +107,9 @@ class Header extends React.Component {
     );
   }
 }
+
+Header.defaultProps = {
+  slogan: 'Design system by Studio Raketa',
+};
 
 export default Header;
